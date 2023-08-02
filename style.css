@@ -1,0 +1,571 @@
+@font-face {
+    font-family: 'mainfontused';
+    src: url('SOURCESANSPRO-SEMIBOLD.TTF') format('truetype');
+
+}
+
+* {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+    font-family: 'mainfontused';
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    z-index: 1;
+    padding-top: 33px;
+    padding-left: 33px;
+    font-size: 18px;
+    justify-content: space-between;
+}
+
+.nav a {
+    padding-right: 39.4px;
+}
+
+.nam {
+    text-transform: uppercase;
+    letter-spacing: 0.9;
+    padding-right: 30px;
+}
+
+#curs {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #ddd;
+    border-radius: 50%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    /* This ensures the cursor doesn't interfere with other elements */
+    z-index: 9999;
+}
+
+#plus {
+    opacity: 0.6;
+}
+
+.curscircle {
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 100000079908;
+    pointer-events: none;
+    transition: left 0.12s ease, top 0.1s ease;
+}
+
+.firstsec {
+    width: 100%;
+    height: 100vh;
+}
+
+.hdnsh {
+    color: #ddd;
+    opacity: 0.8;
+    line-height: 0.78;
+    padding-top: 50px;
+}
+
+.hdnsh .h1 {
+    height: fit-content;
+    padding-left: 43px;
+    padding-top: 83px;
+    font-size: 13vw;
+}
+
+.hdnsh .h2 {
+    padding-left: 171px;
+    padding-top: -15px;
+    font-size: 13vw;
+}
+
+.locl {
+    width: max-content;
+    cursor: default;
+    /* background-color: crimson; */
+}
+
+.loc {
+    font-size: 2vw;
+    text-align: right;
+}
+
+.foot {
+    position: absolute;
+    bottom: 3%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.lf,
+.mf {
+    color: white;
+    text-transform: uppercase;
+}
+
+.lfp {
+    font-size: 1.4rem;
+}
+
+.mf {
+    font-size: 1.4rem;
+    width: 400px;
+}
+
+.rf {
+    width: 25px;
+    height: 25px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rf i {
+    background-color: transparent;
+}
+
+.mf i {
+    background-color: transparent;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.mf {
+    transition: 1.6s ease;
+    background-color: transparent;
+}
+
+.abh {
+    font-size: 1.3rem;
+}
+
+.foot .rf {
+    position: relative;
+    right: 1.2%;
+    cursor: pointer;
+}
+
+.firstsec .lf {
+    left: 1.2%;
+    position: relative;
+    cursor: pointer;
+}
+
+.firstsec .mf {
+    cursor: pointer;
+}
+
+.loc:hover {
+    background: linear-gradient(to left, #ff9933, #ffffff, #138808, #ffffff, #1952a8, #ffffff, #ec1c24);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.more {
+    width: 100%;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    
+    text-transform: uppercase;
+}
+
+.wz {
+    overflow: hidden;
+    display: flex;
+    padding-left: 3vw;
+}
+
+.wz1 {
+    font-size: 7vw;
+
+}
+
+.qz {
+    overflow: hidden;
+    padding-left: 3vw;
+    display: flex;
+}
+
+.qz1 {
+    font-size: 7vw;
+    padding-right: 3.9vw;
+}
+
+.elem {
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+}
+
+.dt {
+    overflow: hidden;
+    display: flex;
+    padding-left: 3vw;
+}
+
+.dt1 {
+    font-size: 7vw;
+    padding-right: 3vw;
+}
+
+.dat {
+    padding-right: 30px;
+}
+
+.n {
+    font-size: 11vw;
+}
+
+.elem img {
+    position: absolute;
+    background-color: white;
+    z-index: 999;
+    height: 25%;
+}
+
+.about {
+    width: 100%;
+    cursor: default;
+    height: 100vh;
+}
+
+.evryt {
+    padding-top: 10vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+}
+
+.evryt img {
+    height: 230px;
+    padding-left: 15px;
+    border-radius: 50%;
+}
+
+.evryt p {
+    color: white;
+
+    width: 350px;
+}
+body::-webkit-scrollbar {
+    display: none;
+  }
+.btn {
+    width: 600px;
+    padding-top: 10px;
+}
+
+.git:hover {
+    color: black;
+    background-color: #fff;
+}
+
+.git {
+    border-radius: 10px;
+    font-size: 2rem;
+    transition: all 0.6s ease-in-out;
+    border: 1px solid white;
+}
+
+.evryt {
+    padding-left: 450px;
+}
+
+.rca {
+    padding-left: 110px;
+}
+
+.ftm {
+    padding-top: 100px;
+    padding-left: 33px;
+    background-color: transparent;
+    text-transform: uppercase;
+
+}
+
+.ftmp {
+    background-color: transparent;
+    font-family: 'mainfontused';
+    color: white;
+    opacity: 0.8;
+}
+
+.ig {
+    font-family: 'mainfontused';
+    position: relative;
+    width: fit-content;
+    cursor: pointer;
+    color: white;
+}
+.mnu{
+    display: none;
+    
+    animation: down 0.6s ease-in;
+    
+}
+@keyframes down {
+    0%{
+        margin-top: -800px;
+    }
+    100%{
+        margin-top: 00px;
+    }
+}
+li{
+    list-style: none;
+    padding-top: 10px;
+}
+footer {
+    color: white;
+    padding-bottom: 25px;
+    display: flex;
+    background-color: black;
+    background-image: radial-gradient(#b3b0b0 1px, transparent 3px);
+    background-size: 70px 70px;
+    justify-content: space-between;
+}
+
+.pl {
+    display: flex;
+    padding-left: 30px;
+}
+
+.tim {
+    padding-left: 25px;
+}
+
+.pr {
+    padding-right: 30px;
+}
+
+
+.animu::before {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    height: 3px;
+    width: 0;
+    background-color: #fff;
+    border-radius: 50px;
+    transition: width 0.4s ease;
+}
+
+.animu:hover::before {
+    width: 100%;
+}
+
+.animu2::before {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    height: 3px;
+    width: 0;
+    background-color: #fff;
+    border-radius: 50px;
+    transition: width 0.4s ease;
+}
+
+.animu2:hover::before {
+    width: 105px;
+}
+
+.more img:nth-child(2) {
+    background-color: white;
+}
+
+
+.down {
+    color: black;
+}
+
+.h1 {
+    animation: lefts 0.8s ease;
+}
+
+@keyframes lefts {
+    0% {
+        transform: translateX(-555px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.abh {
+    animation: lefts 0.46s ease;
+}
+
+.nam {
+    animation: rights 0.46s ease;
+}
+
+.h2 {
+    animation: rights 0.9s ease;
+}
+
+@keyframes rights {
+    0% {
+        transform: translateX(555px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.loc {
+    animation: appear 09.8s ease;
+}
+.rf i{
+    color: black;
+}
+.dn{
+    color: black;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+.ftm{
+    background-color: transparent;
+}
+.more img {
+    position: absolute;
+    margin-left: 69%;
+    background-color: transparent;
+}
+.about img{
+    transition: all 0.5s ease;
+}
+.about img:hover{
+    scale: 1.1;
+}
+img{
+    display: inline;
+}
+a {
+    background-color: transparent;
+}
+
+.animu3::before {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    height: 3px;
+    width: 0;
+    background-color: #fff;
+    border-radius: 50px;
+    transition: width 0.4s ease;
+}
+
+
+.animu3:hover::before {
+    width: 225px;
+}
+footer{
+    background-color: black;
+}
+.wd {
+    position: relative;
+    width: fit-content;
+}
+
+#more {
+    cursor: default;
+}
+@media screen and (max-width: 768px) {
+    /* Change font-family to a different one for smaller screens */
+
+    /* Override the font-family for all elements within the #web container */
+    #web * {
+        font-family: 'mainfontused', sans-serif !important;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    i{
+        color: black;
+        background-color: transparent;
+    }
+    .foot{
+        padding-bottom: 40px;
+        display: flex;
+        padding-left: 75px;
+        flex-direction: column;
+    }
+    .hdnsh{
+        padding-top: 100px;
+    }
+    .hdnsh .h1{
+        font-size: 19vw;
+    }
+    .locl .h2{
+        font-size: 14vw;
+    }
+    .locl .loc{
+        font-size: 5.6vw;
+    }
+    .evryt{
+        width: 100%;
+        display: block;
+    }
+    .evryt img{
+        width: 100px;
+        margin-left: -54%;
+        height: 100px;
+    }
+    .abp{
+        margin-left: -124%;
+        font-size: 18px;
+        width: 300px;
+    }
+    .git{
+        margin-left: -64%;
+    }
+    .ftmp{
+        visibility: hidden;
+        
+    }
+    .ftm{
+        display: flex;
+        justify-content: space-between;
+    }
+    .lf{
+        display: block;
+        width: fit-content;
+        
+        
+    }
+    .mf{
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+
+}
